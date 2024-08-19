@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto Alura</title>
+    <link rel="shortcut icon" href="/assets/rayo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <img src="assets/LogoAlura.png" alt="logo de alura" class="alura">
+    <header >
+        <h1 class="titulo"><strong>Bienvenido al encriptador de texto</strong></h1>
+        <p class="parrafo">¿Deseas hacer de tus mensajes un misterio? ¡Esta pagina es para ti!</p>
+    </header>
+    <main>
+        <section class="input">
+            <textarea class="texto"  placeholder="Ingrese su texto"></textarea>
+            <div class="warning">
+                <p class="aviso"><img src="/assets/bi_exclamation-circle-fill.png"> Solo se permiten letras minusculas, sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button class="btn_encriptar" type="button" onclick="encriptar()"><img src="/assets/CANDADO CERRADO.png">Encriptar texto</button>
+                <button class="btn_desencriptar" type="button" onclick="desencriptar()"><img src="/assets/CANDADO ABIERTO (1).png"> Desencriptar texto</button>
+            </div>
+        </section>
+         <section class="Output"> 
+           <div class="output_container"> 
+              <img src="/assets/Muñeco.png" alt="imagen muñeco" class="img-muñeco">
+              <p class="mensaje_uno">¡Hey! ¡No hay ningun mensaje aqui!</p>
+              <p class="mensaje_dos">Ingresa el texto que quieres alterar</p>
+            </div>
+            <textarea class="resultado" readonly></textarea>
+              <button class="btn_copiar" type="button" onclick="copiar()"><img src="/assets/copiar icono.png">Copiar</button>
+        </section>
+    </main>
+    <footer> 
+        <p>Desarrollado por Sergio L. Santti⚡/ Copyright © 2024</p>
+        <a href="https://github.com/SergiLS19">
+         <img src="/assets/github logo.jpeg">   
+        </a>
+        <a href="https://linkedin.com/in/sergio-lama-santti-8779a125b">
+         <img src="/assets/linkedin logo.jpeg">   
+        </a>
+    </footer>
+      <script src="/scrpt/script.js"></script>
+      </body>
+</html>
+
