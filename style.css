@@ -187,7 +187,7 @@ main{
   width: 224px;
   height: 67px;
   margin: 23px auto;
-  visibility: visible;
+  visibility: hidden;
   padding: 10px;
   background: var(--color-primario);
   border: 2px dashed var(--color-secundario);
