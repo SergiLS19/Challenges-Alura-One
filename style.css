@@ -91,9 +91,9 @@ main{
 }
 
 .output{
-  width: 100%;
-  height: auto;
-  position: relative;
+  width: 48%;
+  height: 30%;
+  position: absolute;
   box-shadow: 10px 24px 32px -8px var(--black);
   border-radius: 8px;
   margin-top: 40px; 
@@ -101,7 +101,7 @@ main{
   background-color: var(--color-terciario);
   padding: 10px;
   display: flex;
-  flex-direction: column-reverse; 
+  flex-direction: row; 
   align-items: center; 
 }
 .output_container{
@@ -112,9 +112,8 @@ main{
   
 }
 .resultado{
-  width: 70%;
-  height: auto;
-  position: relative;
+  width: 450px;
+  height: 283px;
   visibility: hidden;
   padding: 10px;
   margin-left: 100px;
@@ -123,8 +122,6 @@ main{
   border: 3px dashed var(--color-secundario);
   outline: none;
   resize: none;
-  top: 0;
-  left: 0;
   border-radius: 8px;
   margin-top: -40px;
 }
@@ -184,10 +181,10 @@ main{
   transform: translateY(6px);
 }
 .btn_copiar{
-  width: 224px;
+  width: 167px;
   height: 67px;
-  margin: 23px auto;
   visibility: hidden;
+  justify-content: center;
   padding: 10px;
   background: var(--color-primario);
   border: 2px dashed var(--color-secundario);
@@ -198,7 +195,7 @@ main{
   color: var(--color-secundario);
   cursor: pointer;
   margin-top: 5px;
-  margin-left: 200px;
+  margin-left: 250px;
   position: relative;
 }
 .btn_copiar:active{
@@ -293,7 +290,7 @@ footer{
   }
   .btn_copiar {
     display: flex;
-    width: 40%;
+    width: auto;
     justify-content: center;
     height: auto;
     margin-left: 200px; 
