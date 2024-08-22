@@ -9,11 +9,14 @@ let mensajeUno = document.querySelector(".mensaje_uno");
 let mensajeDos = document.querySelector(".mensaje_dos");
 
 function encriptar(){
-  let texto=txtEncript.value;
+  let texto=txtEncript.value.trim();
   let txt=texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
+
   if (texto==""){
     swal("¡Hey!","Necesito un texto para poder alterar", "warning");
-
+  }
+  else if (/\d/.test(texto)) {
+    swal("¡Hey!", "No se puede encriptar un número", "warning");
   }
   else if(texto !== txt){
     swal("¡Hey!","No deben haber acentos ni caracteres distintos", "warning");
